@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service ProcessText{
+  rpc process(ProcessTextRequest) returns (ProcessTextResponse) {}
+}
+
+message ProcessTextRequest{
+  string text = 1;
+}
+
+message ProcessTextResponse{
+  int32 size = 1;
+}
